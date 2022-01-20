@@ -1,7 +1,7 @@
 ## Shopify Frontend Developer NASA Challenge (2022)
 
 ### Links
-Demo: https://user01010011.github.io/react_nasa_app/
+Demo: https://codesandbox.io/s/mcsob
 
 ### Features 
 - Fetch data from one of NASA’s APIs and display the resulting images 
