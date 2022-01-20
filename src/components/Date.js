@@ -14,19 +14,20 @@ const Date = (props) => {
     }; 
 
     return (
-        <div class="date-form">
+        <div className="date-form">
+            <h5>Look up NASA space photo of the day!</h5>
             <form onSubmit={props.changeDate}>
-                <div class="date">
+                <div className="date">
                     <Calendar
-                        class="calendar"
+                        calendarClassName="calendar"
                         value={selectDate}
                         onChange={setSelectedDate}
                         dateFormat={dateFormat}
                         minDate={minDate}
                         maxDate={utils().getToday()}
-                        placeholder="Select a date"
+                        inputPlaceholder="Select a date"
                     />
-                    <button class="submit" type="submit">Show Photo</button>
+                    <button className="submit" type="submit">Show Photo</button>
                 </div>
             </form>
         </div>

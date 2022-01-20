@@ -1,4 +1,4 @@
-# Shopify Frontend Developer NASA Challenge (2022)
+## Shopify Frontend Developer NASA Challenge (2022)
 
 ### Links
 Demo: https://user01010011.github.io/react_nasa_app/
