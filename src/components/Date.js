@@ -1,7 +1,7 @@
 import React, { useState} from "react"; 
 import Calendar, { utils } from "react-modern-calendar-datepicker"; 
 
-const date = (props) => {
+const Date = (props) => {
     const [selectDate, setSelectedDate] = useState(""); 
     const dateFormat = () => {
         return `${selectDate.year}/${selectDate.month}/${selectDate.day}`; 
@@ -34,4 +34,4 @@ const date = (props) => {
     )
 }
 
-export default date
+export default Date;

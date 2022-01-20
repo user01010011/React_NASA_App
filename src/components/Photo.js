@@ -1,6 +1,7 @@
-import React, {useState} from "react"; 
+import React, { useState, useEffect} from "react"; 
+import Date from "./Date";
 
-const photo = (props) => {
+const Photo = (props) => {
     return (
         <div class="photo-card" id="photo-card">
             {/* <div class="photo-info" id="photo-info">
@@ -12,4 +13,4 @@ const photo = (props) => {
     )
 }
 
-export default photo;
+export default Photo;
