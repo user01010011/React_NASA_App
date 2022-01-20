@@ -1,3 +1,4 @@
+import React from "react"; 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 
@@ -9,14 +10,14 @@ function App() {
         <p>
           Spacestagram: Image-sharing from the final frontier 
         </p>
-        <a
+        {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Enter
-        </a>
+        </a> */}
       </header>
     </div>
   );
