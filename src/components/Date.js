@@ -1,4 +1,5 @@
 import React, { useState} from "react"; 
+import "react-modern-calendar-datepicker/lib/DatePicker.css";
 import Calendar, { utils } from "react-modern-calendar-datepicker"; 
 
 const Date = (props) => {
@@ -25,9 +26,7 @@ const Date = (props) => {
                         maxDate={utils().getToday()}
                         placeholder="Select a date"
                     />
-                    <button class="submit" type="submit">
-                        Show Photo
-                    </button>
+                    <button class="submit" type="submit">Show Photo</button>
                 </div>
             </form>
         </div>

@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+
+.date {
+  display: flex;
+  justify-content: center;
+
+  margin: 1rem;
+}
+
+@media (max-width: 1500px) {
+  .responsive-calendar {
+    font-size: 8px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .responsive-calendar {
+    font-size: 7px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-calendar {
+    font-size: 6px !important;
+  }
+}
+
+.submit-button {
+  /* font-family: "Special Elite", cursive; */
+  background-color: #ddd;
+  border-radius: 20px;
+  /* padding: 0 1rem; */
+  margin-left: 4px;
+  border-style: none;
+}
+
+.submit-button:hover {
+  color: white;
+}
