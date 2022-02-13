@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./stylesheets/index.css">
+    <link rel="stylesheet" href="./src/App.css">
     <meta
       name="description"
       content="React NASA App"
@@ -12,8 +12,18 @@
     <title>React NASA App</title>
   </head>
   <body>
-    <noscript>Spacestagram: Image-sharing from the final frontier.</noscript>
+    <p>Spacestagram: Image-sharing from the final frontier.</p>
+
     <div id="root"></div>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src=".src/index.js"></script>
+
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
