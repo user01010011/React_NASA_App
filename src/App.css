@@ -106,6 +106,13 @@
 .navbar-icon {
   color: white;
   margin-right: 20px; 
+  transition: transform 450ms;
+}
+.navbar-icon:hover {
+  color: #bbb;
+  margin-right: 20px; 
+  transform: scale(1.08)
+
 }
 
 .social {
