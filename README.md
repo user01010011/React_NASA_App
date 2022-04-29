@@ -11,15 +11,14 @@ Spacetagram is a web app that let users discover and search NASA's space photo o
 
 ### Finished Features
 
-- Fetch data from NASA’s APOD API and display the resulting images
-- Display descriptive data for each image
-- Data-picker to be able to browse photos starting from a specific date
+- [x] Fetch data from NASA’s APOD API and display the resulting images
+- [x] Display descriptive data for each image
+- [x] Data-picker to be able to browse photos starting from a specific date
 
 ### Additional Features To Add
 
-- [] Infinite Scroll
-- [] Like an image
-- [] Unlink an image
+- [ ] Infinite Scroll
+- [ ] Like & Unlike an image
 
 ### Tech Stack
 
