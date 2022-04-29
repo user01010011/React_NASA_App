@@ -34,16 +34,68 @@
   }
 }
 
+/* App */
+
+.app-top {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center;
+}
+.app-top p {
+  margin: 0px; 
+  font-size: 18px; 
+}
 
 /* NavBar  */
 
 .navbar {
   display: flex;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   justify-content: space-between;
-  flex-grow: 1;
+  width: 100%; 
+  padding: 1rem 2rem; 
+  vertical-align: center; 
 }
-
+.navbar-left {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  vertical-align: center; 
+  align-items: center; 
+  flex: 0.3; 
+}
+.navbar-center {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  vertical-align: center; 
+  align-items: center; 
+  flex: 0.4; 
+}
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  color: #bbb;
+  /* margin: 0.5rem 1rem 0 0; */
+  justify-content: center; 
+  vertical-align: center; 
+  align-items: center;
+  flex: 0.3
+}
+.app-photo {
+  margin-right: 20px; 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50px; 
+  vertical-align: center; 
+}
+.app-name {
+  margin: 0px; 
+  vertical-align: center; 
+  font-size: 30px; 
+}
 .nav-logo {
   display: flex;
   justify-content: center;
@@ -51,13 +103,9 @@
   margin-left: 1rem;
   color: whitesmoke;
 }
-
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  color: #bbb;
-  margin: 0.5rem 1rem 0 0;
+.navbar-icon {
+  color: white;
+  margin-right: 20px; 
 }
 
 .social {
@@ -73,14 +121,41 @@
 
 
 
-
 /* Calendar */
 
 .date {
   display: flex;
   justify-content: center;
-
   margin: 1rem;
+  align-items: center; 
+  vertical-align: center; 
+}
+
+.DatePicker input {
+  height: 25px; 
+  width: 350px; 
+  border-radius: 10px; 
+  font-size: 16px; 
+}
+
+.submit-btn {
+  /* font-family: "Special Elite", cursive; */
+  font-size: 16px; 
+  background-color: #ddd;
+  /* border-radius: 20px; */
+  /* padding: 0 1rem; */
+  /* margin-left: 4px; */
+  margin-left: 10px; 
+  border-style: none;
+  /* height: 25px;  */
+  padding: 8px 12px; 
+  border-radius: 10px;
+  white-space: nowrap; 
+}
+.submit-btn:hover {
+  color: black; 
+  font-weight: 600; 
+  background-color: white;
 }
 
 @media (max-width: 1500px) {
@@ -99,17 +174,4 @@
   .responsive-calendar {
     font-size: 6px !important;
   }
-}
-
-.submit-button {
-  /* font-family: "Special Elite", cursive; */
-  background-color: #ddd;
-  border-radius: 20px;
-  /* padding: 0 1rem; */
-  margin-left: 4px;
-  border-style: none;
-}
-
-.submit-button:hover {
-  color: white;
 }
