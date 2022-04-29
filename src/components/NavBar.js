@@ -18,30 +18,32 @@ const Navbar = (props) => {
         <Date />
       </div>
       <div className="navbar-right">
-        <a
-          href="https://github.com/user01010011"
-          target="_blank"
-          rel="noreferrer"
-          className="github"
-        >
-          <BsGithub className="navbar-icon" />
-        </a>
-        <a
-          href="https://medium.com/@isabella.y"
-          target="_blank"
-          rel="noreferrer"
-          className="blog"
-        >
-          <BsMedium className="navbar-icon" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/isabellayan/"
-          target="_blank"
-          rel="noreferrer"
-          className="linkedin"
-        >
-          <BsLinkedin className="navbar-icon" />
-        </a>
+        <div className="navbar-icons">
+          <a
+            href="https://github.com/user01010011"
+            target="_blank"
+            rel="noreferrer"
+            className="github"
+          >
+            <BsGithub className="navbar-icon" />
+          </a>
+          <a
+            href="https://medium.com/@isabella.y"
+            target="_blank"
+            rel="noreferrer"
+            className="blog"
+          >
+            <BsMedium className="navbar-icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/isabellayan/"
+            target="_blank"
+            rel="noreferrer"
+            className="linkedin"
+          >
+            <BsLinkedin className="navbar-icon" />
+          </a>
+        </div>
       </div>
     </div>
   );

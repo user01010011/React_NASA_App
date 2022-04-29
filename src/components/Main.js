@@ -17,11 +17,11 @@ const Main = (props) => {
       <h2>NASA Astronomy Picture of the Day</h2>
       {apod && (
         <article>
-          <header>
+          <header style={{ padding: "0px 0px 10px 0px" }}>
             {apod.title} - <i>{apod.date}</i>
           </header>
-          <img src={apod.url} alt="NASA APOD" width="800" height="auto" />
-          <p>{apod.explanation}</p>
+          <img src={apod.url} alt="NASA APOD" width="800" height="auto"/>
+          <p style={{ fontSize: "22px" }}>{apod.explanation}</p>
           <pre
             style={{
               overflowX: "auto",
