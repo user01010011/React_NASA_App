@@ -2,7 +2,7 @@
 
 Spacetagram is a web app that let users discover and search NASA's space photo of the day.
 
-![Spacetagram App](src/images/spacetagram.png)
+![Spacetagram App](https://raw.githubusercontent.com/user01010011/Spacetagram/master/src/images/spacetagram.png)
 
 ### Demo
 
