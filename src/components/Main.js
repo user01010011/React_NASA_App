@@ -18,7 +18,7 @@ const Main = (props) => {
       {apod && (
         <article>
           <header style={{ padding: "0px 0px 10px 0px" }}>
-            {apod.title} - <i>{apod.date}</i>
+          {apod.title} - <i>{apod.date}</i>
           </header>
           <img src={apod.url} alt="NASA APOD" width="800" height="auto"/>
           <p style={{ fontSize: "22px" }}>{apod.explanation}</p>
