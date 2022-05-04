@@ -35,7 +35,7 @@ const Date = (props) => {
     <div className="date">
       <form onSubmit={props.changeDate}>
         <div className="date-container">
-          {/* <button className="delete-btn" id="delete-btn" onClick={clearSearch}>
+          {/* <button className="delete-btn" id="delete-btn">
             <FaTimesCircle className="delete-icon" />
           </button> */}
           <Calendar
