@@ -1,18 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BsGithub, BsMedium, BsLinkedin } from "react-icons/bs";
 import Date from "./Date";
 import "../App.css";
 
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <img
-          className="app-photo"
-          src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-          alt="app-icon"
-        />
-        <h5 className="app-name">Spacestagram</h5>
+        <Link to="/" className="navbar-link">
+          <img
+            className="app-photo"
+            src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+            alt="app-icon"
+          />
+          <h5 className="app-name">Spacetagram</h5>
+        </Link>
       </div>
       <div className="navbar-center">
         <Date />

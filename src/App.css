@@ -6,7 +6,7 @@
   background-color: #282c34;
   min-height: 100vh;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -54,6 +54,7 @@
   display: flex;
   /* padding: 0.5rem; */
   justify-content: space-between;
+  position: sticky; 
   width: 100%; 
   margin: 0.5rem 0rem;
   padding: 1.2rem 2.4rem; 
@@ -62,10 +63,11 @@
 .navbar-left {
   display: flex; 
   flex-direction: row; 
-  padding: 0rem 5rem; 
+  /* padding: 0rem 5rem;  */
+  padding: 0rem 3rem; 
   vertical-align: center; 
   align-items: center; 
-    justify-content: center; 
+  justify-content: center; 
   flex: 0.3; 
 }
 .navbar-center {
@@ -81,12 +83,25 @@
   flex-direction: row;
   color: #bbb;
   /* margin: 0.5rem 1rem 0 0; */
-  padding: 0rem 5rem; 
+  padding: 0rem 3rem; 
   vertical-align: center; 
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: flex-end;
   float: right; 
   flex: 0.3;
+}
+.navbar-link {
+  text-decoration: none;
+  display: flex; 
+  flex-direction: row;
+  color: white; 
+  vertical-align: center; 
+  align-items: center; 
+  justify-content: center; 
+}
+.navbar-link:visited {
+  color: white; 
 }
 .app-photo {
   margin-right: 20px; 
@@ -108,9 +123,10 @@
   color: whitesmoke;
 }
 .navbar-icons {
-  display: flex;
-  flex-direction: row;  
+  /* display: flex;
+  flex-direction: row;   */
   float: right; 
+  align-items: right;
 }
 .navbar-icon {
   color: white;
@@ -157,7 +173,7 @@
 
 .DatePicker input {
   height: 25px; 
-  width: 350px; 
+  min-width: 350px; 
   border-radius: 10px; 
   font-size: 18px; 
   border: none;

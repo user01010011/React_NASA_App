@@ -8,6 +8,7 @@ import '../App.css';
 const Date = (props) => {
   const [selectDate, setSelectedDate] = useState("");
   const dateFormat = () => {
+    if (!selectDate) return ""; 
     return `${selectDate.year}/${selectDate.month}/${selectDate.day}`;
   };
   const minDate = {
