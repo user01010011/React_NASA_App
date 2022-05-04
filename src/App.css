@@ -224,7 +224,27 @@ html {
   /* background-color: white; */
   background-color: #ddd;
 }
-
+.delete-btn {
+  font-size: 18px; 
+  /* font-weight: 800; */
+  color: black; 
+  background-color: white;
+  border-radius: 50px; 
+  /* margin-left: 10px;  */
+  border: none;
+  margin: 0.1rem 0rem 0rem 0.6rem;
+  padding: 0.6rem; 
+  display: flex; 
+  align-items: center; 
+  vertical-align: center; 
+}
+.delete-btn:hover {
+  cursor: pointer; 
+  color: black; 
+  font-weight: 600; 
+  /* background-color: white; */
+  background-color: #ddd;
+}
 
 /* Photo  */
 

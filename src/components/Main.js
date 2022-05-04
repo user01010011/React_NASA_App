@@ -34,8 +34,13 @@ export default function Main() {
   const changeDate = (e) => {
     e.preventDefault();
     let dateInput = e.target[0].value;
-    setDate(dateInput);
-    getPhoto(dateInput);
+    console.log(dateInput)
+    // setDate(dateInput);
+    // getPhoto(dateInput);
+    let formatDateInput = dateInput.toLocaleString().replaceAll("/", "-");
+    setDate(formatDateInput);
+    getPhoto(formatDateInput);
+
   };
 
   return (
