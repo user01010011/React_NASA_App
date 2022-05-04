@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BsGithub, BsMedium, BsLinkedin } from "react-icons/bs";
-import Date from "./Date";
+// import Date from "./Date";
 import "../App.css";
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center">
-        <Date />
+        {/* <Date /> */}
       </div>
       <div className="navbar-right">
         <div className="navbar-icons">

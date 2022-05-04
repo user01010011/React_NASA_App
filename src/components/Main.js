@@ -1,41 +1,64 @@
 import React, { useState, useEffect } from "react";
-import HttpClient from "./HttpClient";
-// import { AiOutlineHeart } from "react-icons/ai";
 import Date from "./Date";
 
-const Main = (props) => {
-  const [apod, setApod] = useState({});
+export default function Main() {
+  const nasaEndpoint = process.env.REACT_APP_NASA_ENDPOINT;
+  const nasaApiKey = process.env.REACT_APP_NASA_API_KEY;
+
+  const [photoData, setPhotoData] = useState("");
+  const [date, setDate] = useState("");
 
   useEffect(() => {
-    HttpClient.getApod().then((apodData) => {
-      setApod(apodData.data);
-    });
+    fetchPhoto();
+    async function fetchPhoto() {
+      const res = await fetch(
+        `${nasaEndpoint}planetary/apod?api_key=${nasaApiKey}`
+      );
+      const data = await res.json();
+      setPhotoData(data);
+      console.log(data);
+    }
   }, []);
 
+  if (!photoData) return <div />;
+
+  async function getPhoto(date) {
+    const res = await fetch(
+      `${nasaEndpoint}planetary/apod?api_key=${nasaApiKey}&date=${date}`
+    );
+    const data = await res.json();
+    setPhotoData(data);
+    console.log(data);
+  }
+
+  const changeDate = (e) => {
+    e.preventDefault();
+    let dateInput = e.target[0].value;
+    setDate(dateInput);
+    getPhoto(dateInput);
+  };
+
   return (
-    <div style={{ maxWidth: 900, padding: 30 }}>
+    <div className="main-container">
+      <Date changeDate={changeDate} />
       <h2>NASA Astronomy Picture of the Day</h2>
-      {apod && (
-        <article>
-          <header style={{ padding: "0px 0px 10px 0px" }}>
-          {apod.title} - <i>{apod.date}</i>
-          </header>
-          <img src={apod.url} alt="NASA APOD" width="800" height="auto"/>
-          <p style={{ fontSize: "22px" }}>{apod.explanation}</p>
-          <pre
-            style={{
-              overflowX: "auto",
-              whiteSpace: "pre-wrap",
-              wordWrap: "break-word",
-            }}
-          >
-            <hr />
-            {/* {JSON.stringify(apod, null, 2)} */}
-          </pre>
-        </article>
-      )}
+      <div className="photo-info">
+        {photoData.title} <i>{photoData.date}</i>
+        {photoData.media_type === "image" ? (
+          <img className="image" src={photoData.url} alt={photoData.title} />
+        ) : (
+          <iframe
+            className="iframe"
+            title="space-video"
+            src={photoData.url}
+            frameBorder="0"
+            allow="encrypted-media"
+            allowFullScreen
+          />
+        )}
+        <p>{photoData.explanation}</p>
+      </div>
+      <hr />
     </div>
   );
-};
-
-export default Main;
+}
