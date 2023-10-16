@@ -16,7 +16,7 @@ useEffect(() => {
     return () => clearInterval(interval); 
 }, []); 
   return (
-    <div class="branding">
+    <div className="branding">
       <small>
         &copy; {currentYear}
         <strong> Spacetagram. </strong> 
