@@ -11,24 +11,17 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-        {/* <Routes>
-          <Route to="/" component={Main} />
-          </Routes>
-          <div className="app-main">
-            <Main />
-          </div> */}
         <Routes>
-          <Route
-            path="/"
-            element={
-              <div className="app-main">
-                <Main />
-              </div>
-            }
-          />
+          {/* <Route path="/" element={<Main />} /> */}
+          <Route path="/" element={<div className="app-main"><Main /></div>} />
         </Routes>
-        <Footer />
       </Router>
+      {/* <div className="app-main">
+        <Main />
+      </div> */}
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
