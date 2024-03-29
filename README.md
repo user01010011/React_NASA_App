@@ -6,8 +6,8 @@ Spacetagram is a web app that lets users discover and search NASA's space photo 
 
 ### Demo
 
+- Live Website / GitHub Page: https://user01010011.github.io/Spacetagram/
 - CodeSandbox: https://codesandbox.io/s/mcsob
-- GitHub Page: https://user01010011.github.io/Spacetagram/
 
 ### Finished Features
 
