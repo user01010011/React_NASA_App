@@ -16,12 +16,8 @@ function App() {
           {/* <Route path="/" element={<div className="app-main"><Main /></div>} /> */}
         </Routes>
       </Router>
-      <div className="app-main">
-        <Main />
-      </div>
-      <div className="footer">
-        <Footer />
-      </div>
+      <Main />
+      <Footer />
     </div>
   );
 }

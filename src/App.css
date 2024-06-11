@@ -1,95 +1,66 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html, body {
+  width: 100%; 
+  height: 100%; 
+  margin: 0; 
+  padding: 0;   
+}
+
 .App {
   display: flex;
   flex-direction: column;
-  width: 100%; 
-  height: 100%; 
   text-align: center;
-  background-color: #282c34;
-  /* min-height: 100vh; */
   align-items: center;
   /* justify-content: center; */
+  max-width: 100%; 
+  min-height: 100vh; 
+  padding: 0rem 2rem;
+  background-color: #282c34;
+  /* min-height: 100vh; */
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-html {
-  width: 100%; 
-}
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* App */
-
-.app-main {
-  width: 100%; 
-  display: flex; 
-  flex-direction: row; 
-  justify-content: space-between; 
-  align-items: center;
 }
 
 /* NavBar  */
 
 .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  vertical-align: center; 
+  align-items: center;
   position: sticky; 
   width: 100%; 
-  margin: 0.5rem 0rem;
-  padding-top: 1.2rem;
-  /* padding: 1.2rem 2.4rem;  */
-  vertical-align: center; 
+  /* margin: 1rem 0rem; */
+  margin: 30px 48px 20px 48px; 
 }
+
 .navbar-left {
   display: flex; 
   flex-direction: row; 
-  padding: 0rem 3rem; 
-  vertical-align: center; 
-  align-items: center; 
-  justify-content: flex-start; 
   float: left; 
-  flex: 0.3; 
 }
-.navbar-center {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: center; 
-  vertical-align: center; 
-  align-items: center; 
-  flex: 0.4; 
-}
+
 .navbar-right {
   display: flex;
   flex-direction: row;
-  /* color: #bbb; */
-  padding: 0rem 3rem; 
-  vertical-align: center; 
-  align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   float: right; 
-  flex: 0.3;
 }
+
 .navbar-link {
   text-decoration: none;
   display: flex; 
@@ -98,11 +69,12 @@ html {
   vertical-align: center; 
   align-items: center; 
   justify-content: center; 
-  margin-left: 20px; 
 }
+
 .navbar-link:visited {
   color: white; 
 }
+
 .app-photo {
   margin-right: 20px; 
   width: 50px; 
@@ -110,11 +82,13 @@ html {
   border-radius: 50px; 
   vertical-align: center; 
 }
+
 .app-name {
   margin: 0px; 
   vertical-align: center; 
   font-size: 30px; 
 }
+
 .nav-logo {
   display: flex;
   justify-content: center;
@@ -122,50 +96,49 @@ html {
   margin-left: 1rem;
   color: whitesmoke;
 }
+
 .navbar-icons {
-  /* display: flex;
-  flex-direction: row;   */
-  float: right; 
+  display: flex;
+  flex-direction: row;  
   align-items: right;
 }
+
 .navbar-icon {
   color: white;
   font-size: 2rem; 
-  margin-right: 20px; 
+  margin: 0 0.5rem;
   transition: transform 450ms;
 }
+
 .navbar-icon:hover {
   color: #bbb;
   margin-right: 20px; 
   transform: scale(1.08)
 }
 
-/* .social {
-  display: flex;
-  padding: 0.7rem 0 0 0.5rem;
-  font-size: 2.2vh;
-  color: #bbb;
+.navbar-icon-link {
+  display: flex; 
+  margin: 0 !important; 
+  padding: 0 !important; 
 }
-.social:hover {
-  color: whitesmoke;
-} */
-
 
 /* Main */
 .main-container {
   width: 100%; 
-  padding: 0rem 2rem;
   display: flex; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .main-top {
+  width: 100%; 
   display: flex; 
   flex-direction: column; 
   align-items: center; 
   justify-content: center; 
 }
+
 .statement {
   margin: 10px 0px; 
   font-size: 16px; 
@@ -173,17 +146,8 @@ html {
 
 /* Date  */
 
-.date {
-  background-color: white; 
-  /* min-width: 500px;   */
-  /* max-width: 800px;  */
-  max-width: 100%; 
-  height: auto; 
-  padding: 5px; 
-  border-radius: 20px; 
-}
-
 .date-container {
+  max-width: 100%; 
   display: flex;
   flex-direction: row; 
   justify-content: center;
@@ -191,12 +155,33 @@ html {
   vertical-align: center; 
 }
 
+.date-form {
+  max-width: 100% !important; 
+  width: 450px; 
+}
+
+.date-section {
+  /* max-width: 100% !important;  */
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  background-color: white; 
+  padding: 5px; 
+  border-radius: 20px; 
+}
+
+.Calendar {
+  max-width: 100%;
+}
+
+.DatePicker {
+  width: 100%;
+}
+
 .DatePicker input {
-  /* height: 25px;  */
+  width: 80%;
   height: auto; 
-  min-width: 350px; 
-  max-width: 100%; 
-  margin-left: 0.6rem; 
   border-radius: 10px; 
   font-size: 18px; 
   border: none;
@@ -211,12 +196,12 @@ html {
   border-radius: 50px; 
   /* margin-left: 10px;  */
   border: none;
-  margin: 0.1rem 0rem 0rem 0.6rem;
   padding: 0.6rem; 
   display: flex; 
   align-items: center; 
   vertical-align: center; 
 }
+
 .submit-btn:hover {
   cursor: pointer; 
   color: black; 
@@ -224,6 +209,7 @@ html {
   /* background-color: white; */
   background-color: #ddd;
 }
+
 .delete-btn {
   font-size: 18px; 
   /* font-weight: 800; */
@@ -238,6 +224,7 @@ html {
   align-items: center; 
   vertical-align: center; 
 }
+
 .delete-btn:hover {
   cursor: pointer; 
   color: black; 
@@ -251,10 +238,12 @@ html {
 .photo-container {
   margin: 0rem 2rem; 
 }
+
 .photo-info {
   display: flex; 
   flex-direction: column; 
 }
+
 .photo-info img {
   margin-top: 20px; 
   max-width: 100%; 
@@ -283,6 +272,13 @@ html {
 }
 
 @media (max-width: 768px) {
+  .date-form {
+    width: 100%; 
+  }
+
+  .navbar-icon {
+    margin: 0 0.2rem;
+  }
   .responsive-calendar {
     font-size: 6px !important;
   }

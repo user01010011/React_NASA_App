@@ -32,9 +32,9 @@ const Date = (props) => {
   // };
 
   return (
-    <div className="date">
-      <form onSubmit={props.changeDate}>
-        <div className="date-container">
+    <div className="date-container">
+      <form onSubmit={props.changeDate} className="date-form">
+        <div className="date-section">
           {/* <button className="delete-btn" id="delete-btn">
             <FaTimesCircle className="delete-icon" />
           </button> */}

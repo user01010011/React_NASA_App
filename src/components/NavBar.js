@@ -17,16 +17,13 @@ const Navbar = () => {
           <h5 className="app-name">Spacetagram</h5>
         </Link>
       </div>
-      <div className="navbar-center">
-        {/* <Date /> */}
-      </div>
       <div className="navbar-right">
         <div className="navbar-icons">
           <a
             href="https://github.com/user01010011"
             target="_blank"
             rel="noreferrer"
-            className="github"
+            className="navbar-icon-link"
           >
             <BsGithub className="navbar-icon" />
           </a>
@@ -34,7 +31,7 @@ const Navbar = () => {
             href="https://medium.com/@isabella.y"
             target="_blank"
             rel="noreferrer"
-            className="blog"
+            className="navbar-icon-link"
           >
             <BsMedium className="navbar-icon" />
           </a>
@@ -42,7 +39,7 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/isabellayan/"
             target="_blank"
             rel="noreferrer"
-            className="linkedin"
+            className="navbar-icon-link"
           >
             <BsLinkedin className="navbar-icon" />
           </a>
